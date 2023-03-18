@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color: rgb(37, 37, 37);
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+#heading {
+	color: rgb(206, 206, 206);
+	font-family: "Barlow Condensed", sans-serif;
+	font-size: 3em;
+}
+#computer-img {
+	-webkit-filter: invert(100%); /* Safari/Chrome */
+	filter: invert(100%);
+}
+#username {
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 2em;
+	font-weight: bolder;
+	color: aliceblue;
+}
+.user {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 0.5em;
+}
+.computer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 0.5em;
+}
+#computername {
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 2em;
+	font-weight: bolder;
+	color: aliceblue;
+}
+.info {
+	display: flex;
+	box-sizing: border-box;
+	width: 99vw;
+	padding-left: 2vh;
+	padding-right: 2vh;
+	justify-content: space-between;
+}
+#user-score,
+#computer-score {
+	color: white;
+	font-family: Roboto, sans-serif;
+	font-size: 2em;
+	font-weight: bold;
+}
+
+h2 {
+	color: rgb(206, 206, 206);
+	font-family: "Barlow Condensed", sans-serif;
+	font-size: 3em;
+}
+.button {
+	background-color: #4caf50; /* Green */
+	border: none;
+	color: white;
+	padding: 16px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	transition-duration: 0.4s;
+	cursor: pointer;
+	box-shadow: 0 9px #999;
+}
+
+.button:active {
+	background-color: #3e8e41;
+	box-shadow: 0 5px #666;
+	transform: translateY(4px);
+  }
+
+#rock,
+#paper,
+#scissors {
+	background-color: rgb(170, 215, 212);
+	color: black;
+	border: 2px solid #4caf50;
+	border-radius: 50%;
+	display:block;
+	height: 6em;
+	width: 6em;
+	font-size: 1.5rem;
+	text-align: center;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#rock:hover, #paper:hover, #scissors:hover {
+	background-color: #4caf50;
+	color: white;
+}
+.content{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.buttons{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
+}
+.results{
+	margin-top: 5vh;
+}
+.round-winner, .total-winner{
+	font-family: Roboto, sans-serif;
+	color: rgb(238, 238, 238);
+	font-weight: bolder;
+	font-size: 2em;
+}
+.startOver{
+	width: 50vw;
+	height: 8vh;
+	font-size: 3em;
+	font-family: Roboto, sans-serif;
+	border-radius: 10px;
+	display: none;
+}
